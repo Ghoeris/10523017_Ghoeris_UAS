@@ -1,0 +1,279 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #ddd;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.header-text {
+  flex: 1;
+  max-width: 600px;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.header-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header-image img {
+  height: auto;
+  display: block;
+  border-radius: 10%;
+}
+
+.header-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10%;
+}
+
+.products-section {
+  padding: 50px 20px;
+}
+
+.products-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-card {
+  background: #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.pembelian {
+  padding: 50px 20px;
+}
+
+.pembelian h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-container label {
+  margin-bottom: 10px;
+}
+
+.form-container input[type="text"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-buttons input[type="button"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-buttons input[type="button"]:hover {
+  background-color: #555;
+}
+
+#hasil {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#hasil th,
+#hasil td {
+  padding: 10px;
+  border: 1px solid #444;
+}
+
+.profile-container {
+  display: flex;
+  padding: 50px 20px;
+  align-items: center;
+  border-top: 3px solid #444;
+}
+
+.profile-image {
+  flex: 1;
+}
+
+.profile-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.profile-text {
+  flex: 2;
+  padding-left: 20px;
+}
+
+.profile-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.profile-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  border-top: 3px solid #444;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-brand img {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer-links,
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-links a,
+.footer-social a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  color: #bbb;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}

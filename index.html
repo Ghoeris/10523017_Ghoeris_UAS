@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GhoerisunHaq</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="gambar/png-transparent-lamborghini-logo-emblem-logo-brand-thumbnail-removebg-preview.png" alt="Brand Logo">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#utama">Utama</a></li>
+            <li class="nav-item"><a href="#produk">Produk</a></li>
+            <li class="nav-item"><a href="#pembelian">Transaksi</a></li>
+            <li class="nav-item"><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <header class="header-section" id="utama">
+        <div class="header-text">
+            <h1>Selamat Datang di Website Kami</h1>
+            <p>Jelajahi Legenda. Temukan kekuatan, kecepatan, dan keanggunan yang mendefinisikan Lamborghini. Jelajahi model legendaris kami, masing-masing dibuat dengan presisi dan penuh semangat.</p>
+        </div>
+        <div class="header-image">
+            <img src="https://img.freepik.com/free-photo/cyberpunk-urban-scenery-with-car_23-2150712490.jpg?t=st=1720867319~exp=1720870919~hmac=069aa80d4d20063087de7cda9c0bd31a482a88ceaf64c524ea8236d9e6e8d1a5&w=1380" width="1000px" alt="Header Image">
+        </div>
+    </header>
+
+    <section class="products-section" id="produk">
+        <h2>Produk Kami</h2>
+        <div class="products-container">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1618846446712-a4eda2adc05f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Produk 1">
+                <h3>Lamborghini Aventador</h3>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1621285853634-713b8dd6b5fd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TGFtYm9yZ2hpbmklMjBIdXJhYyVDMyVBMW58ZW58MHx8MHx8fDA%3D" alt="Produk 2">
+                <h3>Lamborghini Huracán</h3>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1619097763751-2881df85ed25?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TGFtYm9yZ2hpbmklMjBVcnVzfGVufDB8fDB8fHww" alt="Produk 3">
+                <h3>Lamborghini Urus</h3>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1595784286622-ebfcaa159fed?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGxhbWJvcmdoaW5pJTIwZ2FsbGFyZG98ZW58MHx8MHx8fDA%3D" alt="Produk 4">
+                <h3>Lamborghini Gallardo</h3>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1648516083827-bf486d43ffef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TGFtYm9yZ2hpbmklMjBNdXJjaSVDMyVBOWxhZ298ZW58MHx8MHx8fDA%3D" alt="Produk 5">
+                <h3>Lamborghini Murciélago</h3>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1531163953594-bc9a034fafb1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fExhbWJvcmdoaW5pJTIwQ2VudGVuYXJpb3xlbnwwfHwwfHx8MA%3D%3D" alt="Produk 6">
+                <h3>Lamborghini Centenario </h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="pembelian">
+        <div class="pembelian">
+            <h2>Pembelian</h2>
+            <form name="form1" class="form-container">
+                <label for="txtNama">Masukkan Nama :</label>
+                <input type="text" name="txtNama" id="txtNama" required />
+
+                <label for="txtNamaBarang">Masukkan Nama Barang:</label>
+                <input type="text" name="txtNamaBarang" id="txtNamaBarang" required />
+
+                <label for="txtAlamat">Masukkan Alamat:</label>
+                <input type="text" name="txtAlamat" id="txtAlamat" required />
+
+                <div class="form-buttons">
+                    <input type="button" value="Simpan" name="btn2" onclick="simpan()" />
+                    <input type="button" value="Tampilkan" name="btn3" onclick="tampil()" />
+                </div>
+            </form>
+            <table border="1" id="hasil">
+                <tr>
+                    <th>Nama</th>
+                    <th>Nama Barang</th>
+                    <th>Alamat</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="profile">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="gambar/pp.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-text">
+                <h2>Ghoerisun Haq</h2>
+                <p>Lamborghini adalah merek mobil mewah Italia yang dikenal di seluruh dunia karena desain yang ikonik dan performa yang luar biasa. Didirikan pada tahun 1963 oleh Ferruccio Lamborghini, perusahaan ini berfokus pada produksi mobil sport yang menggabungkan kecepatan tinggi dengan estetika yang menakjubkan.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="gambar/png-transparent-lamborghini-logo-emblem-logo-brand-thumbnail-removebg-preview.png" alt="Brand Logo">
+            </div>
+            <div class="footer-links">
+                <a href="#utama">Utama</a>
+                <a href="#produk">Produk</a>
+                <a href="#transaksi">Transaksi</a>
+                <a href="#profile">Profile</a>
+            </div>
+            <div class="footer-social">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Lamborghini. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        var data = [];
+      var i = 0;
+
+      function simpan() {
+        data[i] = {
+          nama: document.form1.txtNama.value,
+          namabarang: document.form1.txtNamaBarang.value,
+          alamat: document.form1.txtAlamat.value,
+        };
+        document.form1.txtNama.value = "";
+        document.form1.txtNamaBarang.value = "";
+        document.form1.txtAlamat.value = "";
+        i++;
+        alert("Data telah disimpan");
+      }
+
+      function tampil() {
+        var isi = "<tr><th>Nama</th><th>Nama Barang</th><th>Alamat</th></tr>";
+        for (var j = 0; j < data.length; j++) {
+          isi +=
+            "<tr><td>" +
+            data[j].nama +
+            "</td><td>" +
+            data[j].namabarang +
+            "</td><td>" +
+            data[j].alamat +
+            "</td></tr>";
+        }
+        document.getElementById("hasil").innerHTML = isi;
+      }
+    </script>
+</body>
+</html>
